@@ -123,7 +123,7 @@ function updateUI() {
 
 function createKeyboard() {
     keyboard.innerHTML = '';
-    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZÇ';
     
     for (let char of letters) {
         const button = document.createElement('button');
@@ -217,7 +217,7 @@ playAgainBtn.addEventListener('click', initGame);
 document.addEventListener('keydown', (e) => {
     if (resultModal.classList.contains('hidden')) {
         const key = e.key.toUpperCase();
-        if (/^[A-Z]$/.test(key)) {
+        if (/^[A-ZÇ]$/.test(key)) {
             const buttons = document.querySelectorAll('.key');
             buttons.forEach(btn => {
                 if (btn.textContent === key && !btn.disabled) {
