@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação - Aprender Brincando - 6c70</title>
+    <meta name="description" content="Um jogo de forca moderno para ajudar estudantes a aprenderem português com diversão.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <main class="game-container">
+        <!-- Barra de Pontuação Removida -->
+        <header>
+            <h1>Alfabetização Cidadã</h1>
+            <p class="subtitle">Aprender Brincando - 6c70!</p>
+        </header>
+
+        <section class="game-area">
+            <div class="hangman-display">
+                <svg id="hangman-svg" viewBox="0 0 100 100">
+                    <!-- Forca -->
+                    <line x1="20" y1="90" x2="80" y2="90" stroke="currentColor" stroke-width="3" />
+                    <line x1="30" y1="90" x2="30" y2="10" stroke="currentColor" stroke-width="3" />
+                    <line x1="30" y1="10" x2="70" y2="10" stroke="currentColor" stroke-width="3" />
+                    <line x1="70" y1="10" x2="70" y2="20" stroke="currentColor" stroke-width="3" />
+                    
+                    <!-- Elementos do Boneco (escondidos inicialmente) -->
+                    <circle id="head" cx="70" cy="30" r="8" fill="none" stroke="currentColor" stroke-width="3" class="hangman-part" />
+                    <line id="body" x1="70" y1="38" x2="70" y2="60" stroke="currentColor" stroke-width="3" class="hangman-part" />
+                    <line id="left-arm" x1="70" y1="45" x2="55" y2="55" stroke="currentColor" stroke-width="3" class="hangman-part" />
+                    <line id="right-arm" x1="70" y1="45" x2="85" y2="55" stroke="currentColor" stroke-width="3" class="hangman-part" />
+                    <line id="left-leg" x1="70" y1="60" x2="55" y2="75" stroke="currentColor" stroke-width="3" class="hangman-part" />
+                    <line id="right-leg" x1="70" y1="60" x2="85" y2="75" stroke="currentColor" stroke-width="3" class="hangman-part" />
+                </svg>
+            </div>
+
+            <div class="word-display-container">
+                <div id="category-display" class="category-badge">Carregando...</div>
+                <div id="word-display" class="word-slots"></div>
+                <div id="hint-display" class="hint-text">Dica: Clique em uma letra para começar.</div>
+            </div>
+        </section>
+
+        <section class="keyboard-area">
+            <div id="keyboard" class="keyboard"></div>
+        </section>
+
+        <footer>
+            <div class="controls">
+                <select id="category-select" class="category-dropdown">
+                    <option value="random">Aleatório</option>
+                    <option value="Trabalho">Trabalho</option>
+                    <option value="Casa">Casa</option>
+                    <option value="Saúde">Saúde</option>
+                    <option value="Cidadania">Cidadania</option>
+                    <option value="Frutas">Frutas</option>
+                    <option value="Animais">Animais</option>
+                    <option value="Objetos">Objetos</option>
+                    <option value="Estados">Estados Brasileiros</option>
+                    <option value="Profissões">Profissões</option>
+                </select>
+                <div class="toggle-container" title="Exibir dica automaticamente ao iniciar">
+                    <label class="switch">
+                        <input type="checkbox" id="auto-hint-toggle" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="toggle-label">Dica Auto</span>
+                </div>
+                <button id="hint-btn" class="secondary-btn">💡 Dica</button>
+                <button id="reset-btn" class="secondary-btn">Nova Palavra</button>
+            </div>
+            <div class="stats">
+                <span>Erros: <span id="error-count">0</span>/6</span>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Modal de Resultado -->
+    <div id="result-modal" class="modal hidden">
+        <div class="modal-content glass">
+            <h2 id="result-title">Resultado</h2>
+            <p id="result-message"></p>
+            <div class="word-reveal">
+                <span id="revealed-word"></span>
+            </div>
+            <p id="word-meaning" class="meaning-text"></p>
+            <button id="play-again-btn" class="primary-btn">Jogar Novamente</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

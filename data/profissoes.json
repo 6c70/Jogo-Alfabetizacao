@@ -1,0 +1,26 @@
+[
+  {"word": "VENDEDOR", "meaning": "Profissional que trabalha comercializando produtos aos clientes. (Masculino)"},
+  {"word": "PROFESSORA", "meaning": "Profissional que ensina, educa e compartilha conhecimentos. (Feminino)"},
+  {"word": "MOTORISTA", "meaning": "Profissional que conduz veículos como carros e ônibus. (Masculino)"},
+  {"word": "ENFERMEIRA", "meaning": "Profissional que cuida de pacientes e auxilia médicos. (Feminino)"},
+  {"word": "COZINHEIRO", "meaning": "Profissional que prepara pratos e refeições em restaurantes.(Masculino)"},
+  {"word": "PEDREIRO", "meaning": "Profissional que trabalha na construção de casas e edifícios. (Masculino)"},
+  {"word": "MECANICO", "meaning": "Especialista em conserto de motores e máquinas. (Masculino)"},
+  {"word": "CABELEIREIRA", "meaning": "Profissional especializada em cuidar dos cabelos. (Feminino)"},
+  {"word": "ADVOGADA", "meaning": "Profissional que atua na defesa de direitos e leis. (Feminino)"},
+  {"word": "MEDICO", "meaning": "Profissional que diagnostica e trata doenças. (Masculino)"},
+  {"word": "VIGILANTE", "meaning": "Pessoa responsável pela segurança de patrimônios. (Masculino)"},
+  {"word": "FAXINEIRO", "meaning": "Profissional que cuida da limpeza de ambientes. (Masculino)"},
+  {"word": "ELETRICISTA", "meaning": "Profissional que faz a manutenção da rede elétrica."},
+  {"word": "RECEPCONISTA", "meaning": "Profissional que atende o público na entrada de empresas."},
+  {"word": "ADMINISTRADORA", "meaning": "Profissional que administra empresas. (Feminino)"},
+  {"word": "COSTUREIRA", "meaning": "Profissional que conserta e costura roupas.(Feminino)"},
+  {"word": "JORNALISTA", "meaning": "Profisional que transmite notícias."},
+  {"word": "POLICIAL", "meaning": "Profissional responsabel por prender infratores."},
+  {"word": "CARTEIRO", "meaning": "Profissional que entrega cartas.(Masculino)"},
+  {"word": "CUIDADORA", "meaning": "Profissional que cuida de pessoas.(Feminino)"},
+  {"word": "ENCANADOR", "meaning": "Profissional que conserta encanamentos. (Masculino)"}
+
+
+
+]
