@@ -6,7 +6,7 @@ const categories = [
     { name: 'Frutas', file: 'data/frutas.json' },
     { name: 'Animais', file: 'data/animais.json' },
     { name: 'Objetos', file: 'data/objetos.json' },
-    { name: 'Trabalho', file: 'data/trabalho.json' },
+    { name: 'Transporte', file: 'data/transporte.json' },
     { name: 'Casa', file: 'data/casa.json' },
     { name: 'Saúde', file: 'data/saude.json' },
     { name: 'Cidadania', file: 'data/cidadania.json' },
